@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Moda minimalista com estilo urbano. Camisetas, calças e blusas.">
+  <meta name="keywords" content="moda, minimalista, roupas, camisetas, calças, blusas, loja online">
+  <meta name="theme-color" content="#f5f5f5">
+  <link rel="icon" href="favicon.ico" />
+  <title>SHOP - Minimal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cabeçalho padrão -->
+  <header class="custom-header">
+    <div class="logo-area">
+      <span class="brand-name">MINIMAL</span>
+    </div>
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="O que você procura hoje?" />
+    </div>
+    <button class="ver-favoritos" aria-pressed="false">❤ Favoritos</button>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="Filtros de Produtos">
+      <label for="categoryFilter">Categoria:</label>
+      <select id="categoryFilter">
+        <option value="">Todas</option>
+        <option value="camiseta">Camiseta</option>
+        <option value="calça">Calça</option>
+        <option value="blusa">Blusa</option>
+      </select>
+
+      <label for="colorFilter">Cor:</label>
+      <select id="colorFilter">
+        <option value="">Todas</option>
+        <option value="preto">Preto</option>
+        <option value="branco">Branco</option>
+        <option value="rosa">Rosa</option>
+        <option value="bege">Bege</option>
+        <option value="cinza">Cinza</option>
+      </select>
+    </section>
+
+    <section id="produtos" class="product-grid" aria-label="Lista de Produtos">
+      <!-- Produtos gerados por JavaScript -->
+    </section>
+
+    <section id="contato" class="contact-form" aria-label="Formulário de Contato">
+      <h2>Entre em Contato</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Minimal. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
